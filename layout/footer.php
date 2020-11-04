@@ -7,13 +7,6 @@
     </div>
       <div id="iconCredit">Icons made by <a href="https://www.flaticon.local/authors/freepik" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.local/" title="Flaticon" target="_blank">www.flaticon.local</a></div>
       <p>&copy;Copyright 2020. All Rights Reserved.</p>
-
-      <!-- Call to Action area -->
-      <div id="stayConnected">
-        <form action="">
-
-        </form>
-      </div>
     </footer>
   </body>
 </html>

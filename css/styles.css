@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #324469;
+}
+
+/* header area */
+header {
+  margin: 0;
+  width: 100%;
+  color: #fddc5c;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  z-index: 999;
+  flex-direction: column;
+}
+
+#logo {
+  margin-left: 25px;
+}
+
+#logoAndButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #324469;
+  margin: 0;
+}
+
+#dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  background-color: #324469;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#dropdownMenu a {
+  text-decoration: none;
+  color: #fddc5c;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #1f2341;
+}
+
+#dropdownBtn {
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+#dropdownBtn a {
+  color: #fddc5c;
+}
+
+.notActive {
+  display: none;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fddc5c;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 10px 0;
+}
+
+.menuLine {
+  border: 1px solid #fddc5c;
+  width: 20px;
+  margin: 5px 10px;
+}
+
+/* heroarea */
+
+#heroarea {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../imgs/background-flowers1.jpg) no-repeat center/cover;
+  background-position: 65% 15%;
+}
+
+#heroarea h1 {
+  color: #fddc5c;
+  font-size: 54px;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* main content */
+#mainContentWrapper {
+  background-color: #fddc5c;
+  border-radius: 5px;
+  position: relative;
+  bottom: 50px;
+  width: 20rem;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sectionHeadings {
+  color: #1f2341;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #eb7f37;
+  white-space: nowrap;
+}
+
+#aboutMeParagraphs {
+  background-color: #ffaa3c;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 7px;
+}
+
+#myPicture {
+  width: 150px;
+  float: right;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.myProjects {
+  background-color: #ffaa3c;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 3px;
+}
+
+.myProjects:hover {
+  background-color: #eb7f37;
+  transform: scale(1.05);
+}
+
+.projectTitle {
+  text-align: center;
+}
+
+.projectPreview {
+  border-radius: 5px;
+  width: 100%;
+}
+
+#sendAMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#sendAMessage input {
+  margin: 0 10px 10px;
+  height: 30px;
+  font-size: 15px;
+}
+
+#sendAMessage textarea {
+  margin: 0 10px 10px;
+  font-size: 15px;
+}
+
+#messageSentMsg {
+  margin: 0 auto;
+  color: #1f2341;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fddc5c;
+  margin: 15px auto 40px;
+}
+
+footer a img {
+  height: 45px;
+  margin: 5px;
+}
+
+#iconDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcon {
+  margin: 20px;
+}
+
+.iconImg {
+  opacity: 0.7;
+  width: 50px;
+  transition-timing-function: ease-in;
+}
+
+.iconImg:hover {
+  transform: scale(1.1, 1.1);
+  transition-timing-function: ease-in;
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+#iconCredit a {
+  color: #ffaa3c;
+}
+
+/* Responsive Design For Tablet Version oeifosfosjfoisdjfoihsofihreoigheiughoidfhgdhfgouhdkljugthoeirgejgfoij*/
+@media (min-width: 601px) {
+  /* header area */
+  header {
+    background-color: #324469;
+    border-bottom: 3px solid #ffaa3c;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #logo {
+    margin-left: 15px;
+  }
+
+  #dropdownMenu {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    width: inherit;
+  }
+
+  #dropdownMenu a {
+    border-bottom: none;
+  }
+
+  .notActive {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+    text-decoration: none;
+    color: #fddc5c;
+    padding: 10px;
+    white-space: nowrap;
+    border: none;
+  }
+
+  .fa {
+    display: none;
+    padding: 0;
+  }
+
+  /* hero area */
+  #heroarea {
+    background-position: 65% 40%;
+    height: 700px;
+  }
+
+  #heroarea h1 {
+    font-size: 72px;
+  }
+
+  /* MAIN CONTENT */
+  #mainContentWrapper {
+    width: inherit;
+    margin: 0 50px;
+    border-radius: 5px;
+  }
+
+  .sectionHeadings {
+    margin: 0;
+  }
+
+  .separateDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  #aboutMeParagraphs {
+    border-radius: 5px;
+    width: 95%;
+  }
+
+  #projectsDiv {
+    display: flex;
+  }
+
+  .myProjects {
+    margin: 20px 5px;
+    width: 50%;
+  }
+
+  #confirmMsg {
+    width: 50%;
+  }
+
+  #sendAMessage {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Resposive Design for PC versionjdhcskjdfnlskjfhidufgldbfivubdslfkvhdfuvhlidfuvbldhgldkfhlkdfhglkjghlkvjnldskfvhleisubjslkdfjvb */
+@media (min-width: 1280px) {
+  #logo {
+    margin-left: 35px;
+    font-size: 40px;
+  }
+
+  #dropdownMenu a {
+    font-size: 35px;
+    margin-right: inherit;
+  }
+
+  #dropdownMenu a:hover {
+    background-color: #1f2341;
+    text-decoration: none;
+    color: #fddc5c;
+    border-bottom: 5px solid #fddc5c;
+  }
+
+  #mainContentWrapper {
+    width: inherit;
+    margin: 0 70px;
+    border-radius: 10px;
+  }
+
+  .separateDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sectionHeadings {
+    font-size: 72px;
+  }
+
+  #myPicture {
+    width: 200px;
+  }
+
+  #aboutMeParagraphs {
+    border-radius: 10px;
+    width: 50%;
+    margin: 0;
+  }
+
+  #projectsDiv {
+    display: flex;
+    width: 50%;
+  }
+
+  .myProjects {
+    margin: 0 10px;
+  }
+
+  #contactMeParagraph p {
+    font-size: 20px;
+  }
+
+  #sendAMessage {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
